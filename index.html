@@ -1,0 +1,236 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>EduHub | Online Courses</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li style="position: relative; left: 150px;">
+        <a href="login.html">
+          <button class="signup-btn" style="background-color: #2e3133; color: #ffb347; font-size: 1.1rem; padding: 10px 28px; border: none; border-radius: 5px; cursor: pointer; position: relative; left: -45px;">
+            Sign Up
+          </button>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="page-header-container" style="padding: 20px; text-align: center; border-bottom: 1px solid #ccc;">
+    <h1 style="margin: 0; font-size: 20px; color: #2e3133;">Welcome to EduHub</h1>
+    <p style="margin: 5px 0 0; color: #64748b;">
+      Discover top-rated online courses, expert instructors, and a vibrant learning community. Start your journey to new skills and success with LearnHub!
+    </p>
+    <p style="margin: 10px 0 0; color: #64748b; font-size: 1.05rem;">
+      Whether you're a beginner or looking to advance your career, our platform offers flexible, engaging, and practical learning experiences. Join thousands of learners and unlock your potential today!
+    </p>
+</div>
+
+ 
+<section style="padding:60px 0; background:#f8f9fa;">
+    <div style="width:90%; max-width:1200px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:60px;">
+            <h2 style="font-size:36px; position:relative; display:inline-block; padding-bottom:15px;">
+                Popular Courses
+                <span style="position:absolute; width:50px; height:3px; background:#4361ee; bottom:0; left:50%; transform:translateX(-50%);"></span>
+            </h2>
+        </div>
+        
+        <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:30px;">
+          <div class="course-card" style="background:white; border-radius:8px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:transform 0.3s;">
+                <div style="height:180px; position:relative; overflow:hidden;">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Web Development" 
+                         style="width:100%; height:100%; object-fit:cover;">
+                    <span style="position:absolute; top:15px; left:15px; background:#4361ee; color:white; padding:5px 10px; border-radius:20px; font-size:12px; font-weight:500;">Development</span>
+                </div>
+                <div style="padding:20px;">
+                    <h3 style="font-size:18px; margin-bottom:10px;">Web Development</h3>
+                    <div style="display:flex; align-items:center; margin:15px 0;">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" style="width:30px; height:30px; border-radius:50%; margin-right:10px;">
+                        <span>Sarah Johnson</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:15px; color:#64748b; font-size:14px;">
+                        <span><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <button style="width:100%; padding:10px; background:#4361ee; color:white; border:none; border-radius:5px; cursor:pointer;" onclick="location.href='course.html'">Enroll Now</button>
+                </div>
+            </div>
+
+
+            <div class="course-card" style="background:white; border-radius:8px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:transform 0.3s;">
+                <div style="height:180px; position:relative; overflow:hidden;">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                         alt="Data Science" 
+                         style="width:100%; height:100%; object-fit:cover;">
+                    <span style="position:absolute; top:15px; left:15px; background:#3b82f6; color:white; padding:5px 10px; border-radius:20px; font-size:12px; font-weight:500;" onclick="location.href='course.html'">Data Science</span>
+                </div>
+                <div style="padding:20px;">
+                    <h3 style="font-size:18px; margin-bottom:10px;">Data Science Fundamentals</h3>
+                    <div style="display:flex; align-items:center; margin:15px 0;">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Instructor" style="width:30px; height:30px; border-radius:50%; margin-right:10px;">
+                        <span>Michael Chen</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:15px; color:#64748b; font-size:14px;">
+                        <span><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <button style="width:100%; padding:10px; background:#4361ee; color:white; border:none; border-radius:5px; cursor:pointer;" onclick="location.href='course.html'">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card" style="background:white; border-radius:8px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:transform 0.3s;">
+                <div style="height:180px; position:relative; overflow:hidden;">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" 
+                         alt="Graphic Design" 
+                         style="width:100%; height:100%; object-fit:cover;">
+                    <span style="position:absolute; top:15px; left:15px; background:#f72585; color:white; padding:5px 10px; border-radius:20px; font-size:12px; font-weight:500;">Design</span>
+                </div>
+                <div style="padding:20px;">
+                    <h3 style="font-size:18px; margin-bottom:10px;">Graphic Design Masterclass</h3>
+                    <div style="display:flex; align-items:center; margin:15px 0;">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Instructor" style="width:30px; height:30px; border-radius:50%; margin-right:10px;">
+                        <span>Emma Rodriguez</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:15px; color:#64748b; font-size:14px;">
+                        <span><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <button style="width:100%; padding:10px; background:#4361ee; color:white; border:none; border-radius:5px; cursor:pointer;" onclick="location.href='course.html'">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card" style="background:white; border-radius:8px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:transform 0.3s;">
+                <div style="height:180px; position:relative; overflow:hidden;">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Mobile Development" 
+                         style="width:100%; height:100%; object-fit:cover;">
+                    <span style="position:absolute; top:15px; left:15px; background:#4895ef; color:white; padding:5px 10px; border-radius:20px; font-size:12px; font-weight:500;">Mobile</span>
+                </div>
+                <div style="padding:20px;">
+                    <h3 style="font-size:18px; margin-bottom:10px;">Mobile App Development</h3>
+                    <div style="display:flex; align-items:center; margin:15px 0;">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Instructor" style="width:30px; height:30px; border-radius:50%; margin-right:10px;">
+                        <span>David Kim</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:15px; color:#64748b; font-size:14px;">
+                        <span><i class="fas fa-star"></i> 4.5</span>
+                    </div>
+                    <button style="width:100%; padding:10px; background:#4361ee; color:white; border:none; border-radius:5px; cursor:pointer;" onclick="location.href='course.html'">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align:center; margin-top:40px;">
+            <button style="padding:12px 24px; background:#4361ee; color:white; border:none; border-radius:5px; font-weight:600; cursor:pointer;" onclick="window.location.href='course.html'">View All Courses</button>
+        </div>
+    </div>
+</section>
+
+<section style="padding:60px 0; background:white;">
+    <div style="width:90%; max-width:1200px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:60px;">
+            <h2 style="font-size:36px; position:relative; display:inline-block; padding-bottom:15px;">
+                What Our Students Say
+                <span style="position:absolute; width:50px; height:3px; background:#4361ee; bottom:0; left:50%; transform:translateX(-50%);"></span>
+            </h2>
+        </div>
+        
+        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:30px;">
+            <div style="background:#f8f9fa; padding:30px; border-radius:8px; position:relative;">
+                <div style="position:relative; z-index:1;">
+                    <p style="font-style:italic; margin-bottom:20px; position:relative;">
+                        "This platform completely transformed my career. I went from zero coding knowledge to landing a developer job in just 6 months!"
+                    </p>
+                    <div style="display:flex; align-items:center;">
+                        <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Sarah" style="width:50px; height:50px; border-radius:50%; margin-right:15px;">
+                        <div>
+                            <h4 style="margin-bottom:5px;">Sarah Williams</h4>
+                            <p style="color:#64748b; font-size:14px;">Web Developer at TechCorp</p>
+                            <div style="color:#ffc107; margin-top:5px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div style="background:#f8f9fa; padding:30px; border-radius:8px; position:relative;">
+                <div style="position:relative; z-index:1;">
+                    <p style="font-style:italic; margin-bottom:20px; position:relative;">
+                        "The quality of instruction is outstanding. The courses are well-structured and the projects helped me build a strong portfolio."
+                    </p>
+                    <div style="display:flex; align-items:center;">
+                        <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="James" style="width:50px; height:50px; border-radius:50%; margin-right:15px;">
+                        <div>
+                            <h4 style="margin-bottom:5px;">James Rodriguez</h4>
+                            <p style="color:#64748b; font-size:14px;">Data Scientist at DataWorld</p>
+                            <div style="color:#ffc107; margin-top:5px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background:#f8f9fa; padding:30px; border-radius:8px; position:relative;">
+                <div style="position:relative; z-index:1;">
+                    <p style="font-style:italic; margin-bottom:20px; position:relative;">
+                        "I loved the interactive lessons and hands-on projects. The instructors are knowledgeable and supportive. Highly recommend this platform!"
+                    </p>
+                    <div style="display:flex; align-items:center;">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA4AMBIgACEQEDEQH/xAAbAAAABwEAAAAAAAAAAAAAAAAAAQIDBAUGB//EADoQAAIBAwIEAwcCBAQHAAAAAAECAAMEEQUhBhIxQSJRYRMUMnGBkaGxwQcjQlIzYtHxJDQ1Q3Lh8P/EABkBAAMBAQEAAAAAAAAAAAAAAAABAwQCBf/EACIRAAICAQQDAQEBAAAAAAAAAAABAhEDEhMhMQQiQTJhUf/aAAwDAQACEQMRAD8A6cFigIe2NzBzoP6hNdnnUHiKA2iRUTzjikHpHY6CxDAigIeIrChIEMCKAisQsKEYgxF4h4isKEYgxF8vpIGsarZaPbG4vqoVTsqgZZ/QDvCxpN8ImYgnMdc/iLfuSum0KVsufifxtj17frMtV451+o//AFS4J/yBVH4EnuouvGmd3xtCxOHW3G3EFEhjfV2A/u3Bmm0r+JtUFU1G2Wqp6shwf9Ib0Rvxcnw6XiFiQtI1rT9XphrKqC2Mmm2zD6SxIlFJMg4tOmN4hEReIRE6s5oQRCiyIRELAbxCIjmInELChvESRHSIgiFioaIiSI6REkQCjLVOKKOfCxkSpxMxbwKxHnMuojqiZdTNm0jR0uI35xlGx55lxYa7Tq7c/i8phxHEYqcg4MWtg8aOo2t7Tqd5NRw285laarWt+pLTRafr6OMMcHyM7UyTg0a07Qsyvt9Sp1B8Qk1KyN0MqmidDgJiwMxAMWIMCu1/WKGh6c93cDmPREH9R/Yec4brfENxrGo1bu6qFj/QvZR5CdA/irdtQtlp8y81x4VHdVHUgdtz1nKqVFmYgfQyORmrBC+R+4BrW5wckb795V1EqJhijHbOJp9N0+pnJGR6y2fSKdRN1AmXVR6CgmYe0vatFsFBy+WMS8W3W5oivbnxDfkJ6/KHq/DZ5OaipyB2lbo9zUsbkULpX5CcZ8vlFLlWhpaWXGn3NazZatAsO+FJH28jOpcI8UJqipbXL/zyP5dQ7e1x2Pkw/M53UtwzsAQCRzDA6nzHzH6GJtz7nXSojFUdgSV/oYdCPlOceZxYs2CORf07hj0hESr4e1ddTsFergXFPC1R642I9DLL2qec9FStWePKLi6YCIRialwijORIVxqVOn/UIOVComtgdxG2qKO8z93xBRpg/wAxZR3fFShiKZJPyi3ENQbNwa6ecQbin5znFXieuSeVPuYweKLn+38xbh1ts6b7eme8L2qGc2TiusPiSPrxWepDQ1htsqRtDzEgZjirINmkNYsQARQWKwDWLGexwYSiAnEaESre+uLbo2QJe2Gv9BUODMzmGADOk2jhxTOi2uq06mPGN5ZrXX2XOxHLjrOXUK9Wj/h1CB5SRqOu1l06ojsccuNjidLIcPEzP8d6wupa3UqswKJ/KpKPIZ/f9ZW6VbioxbEobq4atd8zHG+3oJqNDwLdG7TiTs1wWlF9ZUlXAIltSpoVAxK61GTtLi3TaZpmmIr3dGUjGczF8XaMKea9EYIORibwDAlVxFQFWxfAztJx4ZQzNk5r6RRrocVKOMn0/wB47dIDSZVGzeNR85A0RiLGvQPZmX87fqZIFYtY0n7oxU/LP+05a9jtdFpoOqV7Rlq02PTldfMdpctxUwbcMJjrGsFqshOxJA/JEksecBh3mnFJpUYvJxpvUX1zxNVcEUwc+sqLnVbuvnnqYHpI2NohhK2ZlFINmLDLdZFqNvHi20YcEmI6EMcxsxxhiNjrHYwoWcRRiWXIi1AWimOgyX7v6RS2/pG4MVojoCegiwD5SYlD0jqUM9otLC0QlRvKIdWzsDLhLb0h+6AncQSYrRTBH8ooBu4l17kMRp7E52jpitFSWxKbiG7CUOQnBxkjM1Fa09nTZ22VRkmc5169zduAMs3Y9hF0dwSZU1KmCXfYt0+U1ugs3uFHl3YjO8xLE1a7b7+U3WmU6iaXTNIZYL0gWLcHUKa89GrRf/KRiStO1uvzindIKb+QmNewv7mtmvdVKZLdEXwgS49wa3Sli5eqygfGNy3f6ThxTKJm7S5DUOfriZzW9YrsWo21IVBjc56S+og1dGCYAPLuROdcS2FVnqBK9RSreHlyBiShFOVFG2o2K0tq3tLsVgoz4sKe8lsR7jU3wBU2+v8AtKbhZKiVKlKq7OT3Yyyd+W0rq3VeVvsSD+sUlUzqLuIwtcpdAbZyNvoJZWFUVUIHnkfLrM1XrFb5DnoN/sRLrhSsKt2KRIxjAncVRHJyi0ZSB0jLg+Uv3sxjOOsjVbXA2EqjLRSEHMQwxJtekVOAsYakSOhnWkCNsesRjJ2kxaBx8JgFtk9CIqYyA20A3lgbXJ6GH7nt0M5oZd5hhoPY+sP2J85tbMIpWjqvG1oHzjyUD5xDHkqH1jqtE07c+ckJbwObCUxwDMdSjHVoiMVme4lq+ysTTX4qhx9JyfU159QrHtnl/E6lxcvJUQkkAKcfaczuyAKlbz5m/aZsn6N+FellLaJzXpQHDEHE6Tw+Stsi1RhgMGcupVno3IrUz41bInQeFr5r2wFZwqnnIIHpOSkWbWlSplMqozKy8GK4AA9BJ9pU5qe0ptToXNWo60yyhtsr1HynC7Lyao1lkv8AwQw69OmesrNYsPbW7VEwGA3Ejafp13Xom3Nd0blBDA4Muqts9Giq1HNRsYYnvM8nUiqfFHN7Ui21M83RmA/WPagnLUqIp2qIQPr/AOwPvG9fT2V23JsTnl+fWJ98W8t6bDBPKGU+U6kubD5RQ3NTNSnUHRhJ/DNRre7S4OfZiqEJ8jjaQL2nmpURduVudB5j/wCJ+0XY3goq9GoCaVYZz/mG4P7feWiQmdipKtailROjDPSIqW+Yjh1nfTED5yDtnyIB/eWDLNsYqjypSak0U9Sy5jnH4jRsgO34lwyxl1j0o51sqjaRPu2DLJliCohpQ9xkA0fSA0vSTSgiSsW2h7sh/kEHKIeYJ3ROw1UR5AI0I6hioLH0AjyYjCmOIY6ESVjoxI6tHQYwM7xpampbK+G5SCCR2ONjOTaqSlsR0Oy/ad4uaS3FFqbHAPQntOScZcP3dnVc+zDUHOVcdJnyw5s1+Pk40swHTJmu4DuQFr2rHxAiooPcdD+n5lLR0a5q0y4xv8I7tJel2Vey1O0qYKkkgjfI26GToumrOm2VTwnHUDoJCfUr83BSlYuMeeIzQueVgR4SJZ2ypcMCTg+Y2knx2aItfRVtqms5x7gxYbZwu/5k4apdVQFr2FWng+JgQQI5bae+QRWdh5FoeoOlvRZSdv0meVGhtVwYHjCotK4DAjZgSfrMvb13oU8AnFInHyzv+mfpHOLdSF1dtSpHIyQTIy7n09mc/aWr1IavYn3B9p7Ot3Bxt3BjS01FIq57krjqILHL2eD2QR8EIaQ5ediwOewEce6Bq1Z1rhuo9bRratVXld6akj5KBLBjGLEj3KhgYzTGw+UcYz0Y9HizdyYlo00UxjTGMQTYiDDJiCYAAxBgJiCYwHsw8xrmig0QDoMWpjIMWpjAkqY6p2kRGjytARJVo6GkVWjgaAEgNG61OnWQpVRXRuqsMgwg0VkRUCI1LTrKmCKdrSHqEGZScS6ZRQNdoArMOVgP6j2zNGxC7nYesznE1/Tq00oUmDcrZYicTSSK423IzJzzE949Qu6lEjcxrHaB1MySR6cS2XiU26jmBIHlMpxJxNc33PTt806Z6vncx2+Balhesobm3LZLY+gMlSTtlbbRShA9UdSc995YsGSiR1Zxy/c7xVO1APMMlv0jr8lEhqh6dBG5W+BKOnljqp7valV3cy84c0SvqNenU5CKKtlmPlGOF9MOt3yK1Kr7qh5qjkYGB2+s6jQpUraktKigRFGABLYcTbtmbyPIUVpXY4gCU1ReijAiWMJmjbNNp5gGMbYwM0aZogDJiCYRMQWjGGTEkxJMSTABXNFBowG3h806AkBosNIwaLDRASlaOq0iK3rIWp65aaXTJuKg9p2pqfEf9IgovFeJr3ttaqTc3FKkB3dwP1nMtT40v7pmS3b3ekegp9fvM9Wr1K7+0quzt5scn8wsosTZ0/UuO9JsyRbM9246+yHh+5mYu/4jatVZha0bagh6EguwH3x+JkGGTvE8hisosSXZqtF1a+1as7Xt7WrMu6qzYG/fAl42Tt1mD025exu6dZBsDuPMeU6HbKlzQStRPMjjKkSORl4RXwZFPPaE6eknrbnyi/dS3UTO2aIlLUt+bO0FDRxXPjQYl4ln4twcSfb2wQDwycmdozw4aQOCQWX+3tLbT+HtLo1jce5I1Yj4m3A+QlylNcdI/TQY2EITo5nFy4ZXtdWdgvK+Lde5KYX79IKOp2VwcW95Qq/+FQGWLUgwIKg59JQa9wnpl9Re4FuKF0o8Naj4W/HWaY+R8aMkvE/xlozeRBjbNOaVzqmiXRo++1WXHMj8259CJZ2HFtwrBLxFqJ/egwwmmMlJWZpYpRNozxtmjFG5pXFFatFwyN0IgZp0THC0QXjZaILQoBwvEl40WiS0dDHOeGGkbniw0YEgNFB5H5oYeAB6jfrYWVW5fflHhHmewnMbu5qXdd61VuZnYlpo+OL3Hu1oOhBqN+g/eZRDg/OcSZbHHixW8EI9YZOOk4LAwvnBt2MEHUwAAHSaXhHWBZ3ItLpsW1U7Mf8Att5/KZsDeLXGCCJzJWhxdM7EtuDuvTtHlpTHcHcShSmn3z9BilUb8Kf2m6wCJinFxZrg1JEZae8fRIsU8x6mmJNlEElPaOqmIYEVtAQCuIxe/wDKuPPaSAcyDrd3Ts9MrVqhwEGfzGlYmcy40rK2pikh/wANRn6zPs4DY2+8du7h7u7q3FXqzFvl5SIh/mE9wMz0ILSqMUnbL/QtWeyqhXP8pj4lmy5wwBU5BGR6zmdNzz5PWbfRbv29igPxIMGWTM+SP0sy0SWjZaJLRk6HC0QWjbNEFoxjmYsE4gggAoGGIIICMBxRUaprVwGOeXlUeglZT3TJ7QQST7NMehYgggiOgRawQQAUYXeHBABQJw3oNp0PgHVLq8pVba5fnSii8jH4vlmCCRyr1KYv0bNBtHVEEExGsMdYDBBAA16TDfxMuqq29vbq2KdRvEPPEEEpj/SOJ9HO6fwN8ohPib5QQTeYxVP4/pNJwrUb+amfDy5+xhQTqPZxPo0JiCYUEoQEkxBgggM//9k=" alt="James" style="width:50px; height:50px; border-radius:50%; margin-right:15px;">
+                        <div>
+                            <h4 style="margin-bottom:5px;">Luis Thor</h4>
+                            <p style="color:#64748b; font-size:14px;">Cybersecurity Analyst</p>
+                            <div style="color:#ffc107; margin-top:5px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background:#f8f9fa; padding:30px; border-radius:8px; position:relative;">
+                <div style="position:relative; z-index:1;">
+                    <p style="font-style:italic; margin-bottom:20px; position:relative;">
+                        "LearnHub offers concise, practical courses with excellent instructors. I gained real-world skills and confidence for my tech career."
+                    </p>
+                    <div style="display:flex; align-items:center;">
+                        <img src="data:image/jpeg;base64,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" alt="James" style="width:50px; height:50px; border-radius:50%; margin-right:15px;">
+                        <div>
+                            <h4 style="margin-bottom:5px;">James Bond</h4>
+                            <p style="color:#64748b; font-size:14px;">Web Developer at Howard</p>
+                            <div style="color:#ffc107; margin-top:5px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+ <p>&copy; 2023 LearnHub. All rights reserved. </p>
+    </div>
+</footer>
+</body>
+</html>

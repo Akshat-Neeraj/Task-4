@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction to Machine Learning | EduHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        .course-header {
+            padding: 150px 0 40px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .course-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+        }
+        .module {
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .module-header {
+            padding: 15px 20px;
+            background-color: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson {
+            padding: 15px 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson.completed {
+            background-color: #f0f7ff;
+        }
+        .lesson.locked {
+            color: var(--gray);
+        }
+        .instructor-section {
+            margin-top: 60px;
+            padding: 40px 0;
+            border-top: 1px solid #e2e8f0;
+        }
+        .instructor-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .instructor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .course-actions {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .instructor-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Learn<span>Hub</span></a>
+                <div>
+                    <a href="course.html" class="btn btn-outline">Back to Courses</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-detail">
+        <div class="container">
+            <div class="course-header">
+                <h1>Introduction to Machine Learning</h1>
+                <p>Learn the fundamentals of Machine Learning and build your own models</p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/i_LwzRVP7bg?si=0gxg5yIpyCOv0Sdc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="course-curriculum">
+                <h2>Course Curriculum</h2>
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 1: Introduction to Machine Learning</h3>
+                        <span>5 Lessons • 1h 40m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> What is Machine Learning?</span>
+                        <span>00:00:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Types of Machine Learning</span>
+                        <span>00:10:23</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Applications of Machine Learning</span>
+                        <span>00:23:45</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Machine Learning Workflow</span>
+                        <span>00:38:12</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Getting Started with ML Tools</span>
+                        <span>01:05:30</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructor-section">
+                <h2>About the Instructor</h2>
+                <div class="instructor-card">
+                    <img src="data:image/jpeg;base64,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" alt="Kylie" class="instructor-img">
+                    <div>
+                        <h3>Kylie Ying </h3>
+                        <p>Senior Mobile Developer at TechCorp</p>
+                        <p>With over 10 years of experience in mobile development, Kylie has worked with companies like Google and Microsoft. She specializes in front-end frameworks and loves teaching beginners how to code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #2b2d42; color: white; padding: 15px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2025 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+  // Progress tracking functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const lessons = document.querySelectorAll('.lesson');
+    
+    // Load progress from localStorage
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons')) || [];
+
+    lessons.forEach((lesson, index) => {
+      // Mark lessons as completed if they are in localStorage
+      if (completedLessons.includes(index)) {
+        lesson.classList.add('completed');
+        const icon = lesson.querySelector('i');
+        if (icon) {
+          icon.className = 'fas fa-check-circle';
+          icon.style.color = 'var(--primary)';
+        }
+      }
+
+      // Add click event to toggle completion
+      lesson.addEventListener('click', () => {
+        if (lesson.classList.contains('locked')) return; // do nothing if locked
+
+        if (lesson.classList.contains('completed')) {
+          lesson.classList.remove('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-circle';
+            icon.style.color = '';
+          }
+          const indexToRemove = completedLessons.indexOf(index);
+          if (indexToRemove > -1) completedLessons.splice(indexToRemove, 1);
+        } else {
+          lesson.classList.add('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-check-circle';
+            icon.style.color = 'var(--primary)';
+          }
+          completedLessons.push(index);
+        }
+        // Save progress to localStorage
+        localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+      });
+    });
+  });
+</script>
+  
+</body>
+</html>

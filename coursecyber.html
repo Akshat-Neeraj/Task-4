@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cybersecurity Bootcamp | EduHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        .course-header {
+            padding: 150px 0 40px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .course-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+        }
+        .module {
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .module-header {
+            padding: 15px 20px;
+            background-color: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson {
+            padding: 15px 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson.completed {
+            background-color: #f0f7ff;
+        }
+        .lesson.locked {
+            color: var(--gray);
+        }
+        .instructor-section {
+            margin-top: 60px;
+            padding: 40px 0;
+            border-top: 1px solid #e2e8f0;
+        }
+        .instructor-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .instructor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .course-actions {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .instructor-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Edu<span>Hub</span></a>
+                <div>
+                    <a href="course.html" class="btn btn-outline">Back to Courses</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-detail">
+        <div class="container">
+            <div class="course-header">
+                <h1>Cybersecurity Bootcamp</h1>
+                <p>Master network security, ethical hacking, and cloud security</p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/v3iUx2SNspY?si=qkjJeHBg_3n21Xay" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+
+            <div class="course-curriculum">
+                <h2>Course Curriculum</h2>
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 1: Introduction to Cybersecurity</h3>
+                        <span>3 Lessons • 30m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> What is Cybersecurity?</span>
+                        <span>10:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Types of Cyber Attacks</span>
+                        <span>12:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Importance of Cybersecurity</span>
+                        <span>08:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 2: Cybersecurity Domains</h3>
+                        <span>3 Lessons • 35m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Network Security</span>
+                        <span>15:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Application Security</span>
+                        <span>10:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Cloud Security</span>
+                        <span>10:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 3: Cybersecurity Careers & Certifications</h3>
+                        <span>2 Lessons • 15m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Career Opportunities in Cybersecurity</span>
+                        <span>08:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Popular Cybersecurity Certifications</span>
+                        <span>07:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructor-section">
+                <h2>About the Instructor</h2>
+                <div class="instructor-card">
+                    <img src="data:image/jpeg;base64,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" alt="Ashsih" class="instructor-img">
+                    <div>
+                        <h3>Ashsih Shrivastav</h3>
+                        <p>Senior Cybersecurity at TechCorp</p>
+                        <p>With over 10 years of experience in cybersecurity, Ashsih has worked with companies like Google and Microsoft. He specializes in threat detection and loves teaching beginners how to secure their applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #2b2d42; color: white; padding: 15px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2025 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+  // Progress tracking functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const lessons = document.querySelectorAll('.lesson');
+    
+    // Load progress from localStorage
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons')) || [];
+
+    lessons.forEach((lesson, index) => {
+      // Mark lessons as completed if they are in localStorage
+      if (completedLessons.includes(index)) {
+        lesson.classList.add('completed');
+        const icon = lesson.querySelector('i');
+        if (icon) {
+          icon.className = 'fas fa-check-circle';
+          icon.style.color = 'var(--primary)';
+        }
+      }
+
+      // Add click event to toggle completion
+      lesson.addEventListener('click', () => {
+        if (lesson.classList.contains('locked')) return; // do nothing if locked
+
+        if (lesson.classList.contains('completed')) {
+          lesson.classList.remove('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-circle';
+            icon.style.color = '';
+          }
+          const indexToRemove = completedLessons.indexOf(index);
+          if (indexToRemove > -1) completedLessons.splice(indexToRemove, 1);
+        } else {
+          lesson.classList.add('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-check-circle';
+            icon.style.color = 'var(--primary)';
+          }
+          completedLessons.push(index);
+        }
+        // Save progress to localStorage
+        localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+      });
+    });
+  });
+</script>
+  
+</body>
+</html>

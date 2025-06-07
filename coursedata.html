@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Science | EduHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        .course-header {
+            padding: 150px 0 40px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .course-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+        }
+        .module {
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .module-header {
+            padding: 15px 20px;
+            background-color: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson {
+            padding: 15px 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson.completed {
+            background-color: #f0f7ff;
+        }
+        .lesson.locked {
+            color: var(--gray);
+        }
+        .instructor-section {
+            margin-top: 60px;
+            padding: 40px 0;
+            border-top: 1px solid #e2e8f0;
+        }
+        .instructor-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .instructor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .course-actions {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .instructor-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Edu<span>Hub</span></a>
+                <div>
+                    <a href="course.html" class="btn btn-outline">Back to Courses</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-detail">
+        <div class="container">
+            <div class="course-header">
+                <h1>Data Science with Python</h1>
+                <p>Master data analysis, visualization, machine learning, and build real projects</p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ua-CiDNNj30?si=8KJNgiSyZFnO3Tpm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="course-curriculum">
+                <h2>Course Curriculum</h2>
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 1: Introduction to Data Science</h3>
+                        <span>2 Lessons • 18m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> What is Data Science?</span>
+                        <span>08:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Applications of Data Science</span>
+                        <span>10:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 2: Data Science Process</h3>
+                        <span>3 Lessons • 25m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Steps in a Data Science Project</span>
+                        <span>09:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Data Collection & Cleaning</span>
+                        <span>08:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Exploratory Data Analysis</span>
+                        <span>08:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 3: Machine Learning Basics</h3>
+                        <span>3 Lessons • 30m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> What is Machine Learning?</span>
+                        <span>10:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Types of Machine Learning</span>
+                        <span>10:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Model Building & Evaluation</span>
+                        <span>10:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 4: Real-World Data Science Project</h3>
+                        <span>2 Lessons • 22m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Project Walkthrough</span>
+                        <span>12:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Tips for Beginners</span>
+                        <span>10:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructor-section">
+                <h2>About the Instructor</h2>
+                <div class="instructor-card">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZTKQfiP45r75vWggJI1CjkT0RWyF9ZdEfYLQgEGFmAjYZTgt5C3QcgRld-p_rqthxboVxG9piNRPPzATkn-HMnsamhqh12VGGFO7eEr8A" class="instructor-img">
+                    <div>
+                        <h3>Barton Poulson</h3>
+                        <p>Senior Data Scientist at TechCorp</p>
+                        <p>With over 10 years of experience in data science, Barton has worked with companies like Google and Microsoft. He specializes in machine learning and enjoys helping beginners learn to code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #2b2d42; color: white; padding: 15px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2025 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+  // Progress tracking functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const lessons = document.querySelectorAll('.lesson');
+    
+    // Load progress from localStorage
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons')) || [];
+
+    lessons.forEach((lesson, index) => {
+      // Mark lessons as completed if they are in localStorage
+      if (completedLessons.includes(index)) {
+        lesson.classList.add('completed');
+        const icon = lesson.querySelector('i');
+        if (icon) {
+          icon.className = 'fas fa-check-circle';
+          icon.style.color = 'var(--primary)';
+        }
+      }
+
+      // Add click event to toggle completion
+      lesson.addEventListener('click', () => {
+        if (lesson.classList.contains('locked')) return; // do nothing if locked
+
+        if (lesson.classList.contains('completed')) {
+          lesson.classList.remove('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-circle';
+            icon.style.color = '';
+          }
+          const indexToRemove = completedLessons.indexOf(index);
+          if (indexToRemove > -1) completedLessons.splice(indexToRemove, 1);
+        } else {
+          lesson.classList.add('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-check-circle';
+            icon.style.color = 'var(--primary)';
+          }
+          completedLessons.push(index);
+        }
+        // Save progress to localStorage
+        localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+      });
+    });
+  });
+</script>
+  
+</body>
+</html>

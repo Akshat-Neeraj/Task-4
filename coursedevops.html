@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Bootcamp | EduHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        .course-header {
+            padding: 150px 0 40px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .course-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+        }
+        .module {
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .module-header {
+            padding: 15px 20px;
+            background-color: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson {
+            padding: 15px 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson.completed {
+            background-color: #f0f7ff;
+        }
+        .lesson.locked {
+            color: var(--gray);
+        }
+        .instructor-section {
+            margin-top: 60px;
+            padding: 40px 0;
+            border-top: 1px solid #e2e8f0;
+        }
+        .instructor-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .instructor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .course-actions {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .instructor-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Edu<span>Hub</span></a>
+                <div>
+                    <a href="course.html" class="btn btn-outline">Back to Courses</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-detail">
+        <div class="container">
+            <div class="course-header">
+                <h1>DevOps Bootcamp</h1>
+                <p>Master CI/CD, Docker, Kubernetes, and cloud infrastructure</p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/j5Zsa_eOXeY?si=evu51OVzTZH9CeB_" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="course-curriculum">
+                <h2>Course Curriculum</h2>
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 1: Introduction to DevOps</h3>
+                        <span>3 Lessons • 30m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> What is DevOps?</span>
+                        <span>10:12</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> DevOps Lifecycle Overview</span>
+                        <span>09:05</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> DevOps Tools & Technologies</span>
+                        <span>10:43</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 2: CI/CD Pipeline</h3>
+                        <span>2 Lessons • 20m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> What is CI/CD?</span>
+                        <span>11:20</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> CI/CD Demo & Workflow</span>
+                        <span>08:40</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 3: Docker & Containers</h3>
+                        <span>2 Lessons • 18m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Introduction to Docker</span>
+                        <span>09:10</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Docker Demo</span>
+                        <span>08:50</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 4: Kubernetes Basics</h3>
+                        <span>2 Lessons • 22m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> What is Kubernetes?</span>
+                        <span>11:30</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Kubernetes Demo</span>
+                        <span>10:30</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructor-section">
+                <h2>About the Instructor</h2>
+                <div class="instructor-card">
+                    <img src="data:image/jpeg;base64,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" alt="Colin" class="instructor-img">
+                    <div>
+                        <h3>Colin Charter</h3>
+                        <p>Senior Web Developer at TechCorp</p>
+                        <p>With over 10 years of experience in web development, Kushagra has worked with companies like Google and Microsoft. He specializes in front-end frameworks and loves teaching beginners how to code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #2b2d42; color: white; padding: 15px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2025 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+  // Progress tracking functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const lessons = document.querySelectorAll('.lesson');
+    
+    // Load progress from localStorage
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons')) || [];
+
+    lessons.forEach((lesson, index) => {
+      // Mark lessons as completed if they are in localStorage
+      if (completedLessons.includes(index)) {
+        lesson.classList.add('completed');
+        const icon = lesson.querySelector('i');
+        if (icon) {
+          icon.className = 'fas fa-check-circle';
+          icon.style.color = 'var(--primary)';
+        }
+      }
+
+      // Add click event to toggle completion
+      lesson.addEventListener('click', () => {
+        if (lesson.classList.contains('locked')) return; // do nothing if locked
+
+        if (lesson.classList.contains('completed')) {
+          lesson.classList.remove('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-circle';
+            icon.style.color = '';
+          }
+          const indexToRemove = completedLessons.indexOf(index);
+          if (indexToRemove > -1) completedLessons.splice(indexToRemove, 1);
+        } else {
+          lesson.classList.add('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-check-circle';
+            icon.style.color = 'var(--primary)';
+          }
+          completedLessons.push(index);
+        }
+        // Save progress to localStorage
+        localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+      });
+    });
+  });
+</script>
+  
+</body>
+</html>

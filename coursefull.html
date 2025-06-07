@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Stack Web Development Bootcamp | EduHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        .course-header {
+            padding: 150px 0 40px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .course-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+        }
+        .module {
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .module-header {
+            padding: 15px 20px;
+            background-color: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson {
+            padding: 15px 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson.completed {
+            background-color: #f0f7ff;
+        }
+        .lesson.locked {
+            color: var(--gray);
+        }
+        .instructor-section {
+            margin-top: 60px;
+            padding: 40px 0;
+            border-top: 1px solid #e2e8f0;
+        }
+        .instructor-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .instructor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .course-actions {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .instructor-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Edu<span>Hub</span></a>
+                <div>
+                    <a href="course.html" class="btn btn-outline">Back to Courses</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-detail">
+        <div class="container">
+            <div class="course-header">
+                <h1>Full Stack Web Development Bootcamp</h1>
+                <p>Master full stack web development: HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and build real-world projects from start to finish.</p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/nu_pCVPKzTk?si=qx2OjftxdrsalEfR" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="course-curriculum">
+                <h2>Course Curriculum</h2>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 1: Getting Started & Setup</h3>
+                        <span>2 Lessons • 13m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Course Overview & Tools</span>
+                        <span>03:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Setting Up Your Environment</span>
+                        <span>10:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 2: HTML & CSS Crash Course</h3>
+                        <span>3 Lessons • 20m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> HTML Structure & Elements</span>
+                        <span>07:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Styling with CSS</span>
+                        <span>08:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Responsive Design Basics</span>
+                        <span>05:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 3: JavaScript Essentials</h3>
+                        <span>3 Lessons • 20m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Variables, Functions & Events</span>
+                        <span>08:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> DOM Manipulation</span>
+                        <span>07:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Making Things Interactive</span>
+                        <span>05:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 4: Building a Simple Project</h3>
+                        <span>2 Lessons • 15m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Project Walkthrough</span>
+                        <span>08:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Final Touches & Deployment</span>
+                        <span>07:00</span>
+                    </div>
+                </div>
+            </div>
+
+
+     <div class="instructor-section">
+                <h2>About the Instructor</h2>
+                <div class="instructor-card">
+                    <img src="data:image/jpeg;base64,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" alt="Biocon" class="instructor-img">
+                    <div>
+                        <h3>Biocon</h3>
+                        <p>YouTube Educator & Software Engineer</p>
+                        <p>Biocon is an educator from the FreeCodeCamp YouTube channel, specializing in web development and programming tutorials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #2b2d42; color: white; padding: 15px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2025 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+  // Progress tracking functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const lessons = document.querySelectorAll('.lesson');
+    
+    // Load progress from localStorage
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons')) || [];
+
+    lessons.forEach((lesson, index) => {
+      // Mark lessons as completed if they are in localStorage
+      if (completedLessons.includes(index)) {
+        lesson.classList.add('completed');
+        const icon = lesson.querySelector('i');
+        if (icon) {
+          icon.className = 'fas fa-check-circle';
+          icon.style.color = 'var(--primary)';
+        }
+      }
+
+      // Add click event to toggle completion
+      lesson.addEventListener('click', () => {
+        if (lesson.classList.contains('locked')) return; // do nothing if locked
+
+        if (lesson.classList.contains('completed')) {
+          lesson.classList.remove('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-circle';
+            icon.style.color = '';
+          }
+          const indexToRemove = completedLessons.indexOf(index);
+          if (indexToRemove > -1) completedLessons.splice(indexToRemove, 1);
+        } else {
+          lesson.classList.add('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-check-circle';
+            icon.style.color = 'var(--primary)';
+          }
+          completedLessons.push(index);
+        }
+        // Save progress to localStorage
+        localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+      });
+    });
+  });
+</script>
+  
+</body>
+</html>

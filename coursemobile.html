@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile App Development | EduHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        .course-header {
+            padding: 150px 0 40px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .course-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+        }
+        .module {
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .module-header {
+            padding: 15px 20px;
+            background-color: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson {
+            padding: 15px 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson.completed {
+            background-color: #f0f7ff;
+        }
+        .lesson.locked {
+            color: var(--gray);
+        }
+        .instructor-section {
+            margin-top: 60px;
+            padding: 40px 0;
+            border-top: 1px solid #e2e8f0;
+        }
+        .instructor-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .instructor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .course-actions {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .instructor-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Edu<span>Hub</span></a>
+                <div>
+                    <a href="course.html" class="btn btn-outline">Back to Courses</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-detail">
+        <div class="container">
+            <div class="course-header">
+                <h1>Mobile App Development Bootcamp</h1>
+                <p>Master Flutter, Dart, Firebase, and build real projects</p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/2esQdKzRUCw?si=VWOEvNXgxJ5IJaK-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="course-curriculum">
+                <h2>Course Curriculum</h2>
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 1: Introduction to Flutter & Setup</h3>
+                        <span>2 Lessons • 30m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> What is Flutter? Why use it?</span>
+                        <span>10:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Installing Flutter & Setting up IDE</span>
+                        <span>20:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 2: Dart Basics</h3>
+                        <span>3 Lessons • 45m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Dart Syntax & Variables</span>
+                        <span>15:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Functions & Control Flow</span>
+                        <span>15:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Object-Oriented Programming in Dart</span>
+                        <span>15:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 3: Building Your First App</h3>
+                        <span>2 Lessons • 35m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Flutter Project Structure</span>
+                        <span>15:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Creating a Simple Counter App</span>
+                        <span>20:00</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <h3>Module 4: Firebase Integration</h3>
+                        <span>2 Lessons • 30m</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Setting up Firebase in Flutter</span>
+                        <span>15:00</span>
+                    </div>
+                    <div class="lesson">
+                        <span><i class="fas fa-circle"></i> Basic Authentication with Firebase</span>
+                        <span>15:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructor-section">
+                <h2>About the Instructor</h2>
+                <div class="instructor-card">
+                    <img src="data:image/jpeg;base64,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" class="instructor-img">
+                    <div>
+                        <h3>Lry Bright</h3>
+                        <p>Senior App Developer at TechCorp</p>
+                        <p>With over 10 years of experience in app development, Lry has worked with companies like Google and Microsoft. He specializes in front-end frameworks and loves teaching beginners how to code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #2b2d42; color: white; padding: 15px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2025 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+  // Progress tracking functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const lessons = document.querySelectorAll('.lesson');
+    
+    // Load progress from localStorage
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons')) || [];
+
+    lessons.forEach((lesson, index) => {
+      // Mark lessons as completed if they are in localStorage
+      if (completedLessons.includes(index)) {
+        lesson.classList.add('completed');
+        const icon = lesson.querySelector('i');
+        if (icon) {
+          icon.className = 'fas fa-check-circle';
+          icon.style.color = 'var(--primary)';
+        }
+      }
+
+      // Add click event to toggle completion
+      lesson.addEventListener('click', () => {
+        if (lesson.classList.contains('locked')) return; // do nothing if locked
+
+        if (lesson.classList.contains('completed')) {
+          lesson.classList.remove('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-circle';
+            icon.style.color = '';
+          }
+          const indexToRemove = completedLessons.indexOf(index);
+          if (indexToRemove > -1) completedLessons.splice(indexToRemove, 1);
+        } else {
+          lesson.classList.add('completed');
+          const icon = lesson.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-check-circle';
+            icon.style.color = 'var(--primary)';
+          }
+          completedLessons.push(index);
+        }
+        // Save progress to localStorage
+        localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+      });
+    });
+  });
+</script>
+  
+</body>
+</html>
